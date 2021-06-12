@@ -1,0 +1,12 @@
+valido = False 
+def validar (N):
+	return N >=3 and N <=30
+while not valido:
+	N = int(input("Ingrese un numero: "))
+	valido = validar (N)
+	if not valido:
+		print("El valor no cumple lo esperado")
+res = 1
+for I in range(N,1,-1):
+	res = res * I
+print ("El resultado del factorial es: ", res)
